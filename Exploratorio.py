@@ -8,8 +8,6 @@ data = pd.read_excel("ToAnalize.xlsx")
 data["engagement"] = data[['Like', 'Love','Haha', 'Angry', 'Wow', 'Sad']].sum(axis = 1)
 data["engagement"] = data["engagement"]  + 5*data['Comment'] + 10*data["Share"]
 
-data = data.loc[data.Page == "Tuenti Ecuador"]   ##########
-
 data = data.loc[data.engagement < 1500]  # saco outliers
 data = data.loc[data.engagement > 30]  # saco outliers
 
@@ -210,10 +208,9 @@ summerized["word"] = list(summerized.index.values)
 #summerized["mean"] = summerized["mean"]*summerized["mean"]   # cuadrado
 cond = finder_label(data_study,'checo')
 
-summerized.to_excel(".\\dataIntermedia\\2TableauPeru.xlsx",index = False)
+summerized.to_excel(".2Tableau.xlsx",index = False)# plot it in Tableau
 
-# APN: 199
-# tdn: es una especie de combo. Todo destino nacional
+
 
 
 
