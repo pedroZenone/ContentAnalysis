@@ -263,7 +263,7 @@ all_labels = [x for x in all_labels if(x not in stop_words )]  # saco stop words
 
 #########################################################################################################♣
 
-data = pd.read_excel("TuentiData.xlsx")
+data = pd.read_excel("ImageWithKPI.xlsx")
 
 fileDir = os.path.dirname(os.path.realpath('__file__'))
 fileOut= os.path.join(fileDir, 'imagenes')
@@ -277,7 +277,7 @@ ids = [x.split('.')[0] for x in nombres_files]
 nombres_jsons = [f for f in listdir(fileOut)
                          if ((".json" in f) & (f[0] != ".") & (f[0] != "~")  & ("roto" not in f) )]
 
-marcas = ["tuenti"]
+marcas = ["PRIVATE"]
 
 
 #all_data = pd.DataFrame([],columns = cols)
