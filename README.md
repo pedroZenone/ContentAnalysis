@@ -8,10 +8,10 @@ This is still under development, and as time goes by I will add new features.
 
 To use it here's a quick guide:
 
-- Vision.py: Ones you got the images or videos run this. You have to have connection to Google vision API. The fact is that this API gives me many descriptive labels of the image that can sometimes be very usefull.
+- 	Vision.py: Ones you got the images or videos run this. You have to have connection to Google vision API. The fact is that this API gives me many descriptive labels of the image that can sometimes be very useful.
 
-- FeatureGen.py: But google features aren't enough, so I added another features, like segments of colors (ex.: dark red, light red will be just red), size of image, bright, saturation, labels understanding, face proporcion in the image, text area, etc.
+- FeatureGen.py: But google features aren't enough, so I added another features, like segments of colors (ex.: dark red, light red will be just red), size of image, bright, saturation, labels understanding, face proportion in the image, text area, etc.
 
-- Exploratorio.py: With all this features generate visualizations in order to see if there is any difference in the distribution.
+- Exploratorio.py: With all these features generate visualizations in order to see if there is any difference in the distribution.
 
 
